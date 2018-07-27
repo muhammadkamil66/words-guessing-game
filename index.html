@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <title>Words Guess Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+<body>
+    <!-- <div class="container d-flex align-items-center justify-content-center"> -->
+        <!-- users introduction section -->
+      
+        
+        <div id="players">
+            <p class="player1">Enter Player 1 Name : </p>
+            <input class="rounded" type="text" id="player1" placeholder="Player 1" >
+            <br>
+            <br>
+            <p class="player1">  Enter Player 2 Name :</p>
+            <input class="rounded" type="text" id="player2" placeholder="Player 2">
+            <br>
+            <br>
+
+            <!-- <button onclick="start()" id="play">Play</button> -->
+            <button type="button" class="btn btn-danger" onclick="start()" id="play">Play</button>
+
+        </div>
+                <!-- users introduction section -->
+                <!-- content of game -->
+        <div id="game">
+                <span id="lives">
+                    <i id="life1" class="fas fa-heart"></i>
+                    <i id="life2"  class="fas fa-heart"></i>
+                    <i id="life3"  class="fas fa-heart"></i>
+                </span>
+            <h1 id="playersName"> </h1>
+            <br>
+            <br>
+            <div id="guess">
+            Write a word : <input  class="rounded" type="text" id="txtWord" placeholder="Enter a word or number">
+            
+
+            <input class="rounded" type="text"  id="hint1" placeholder="Hint" >
+            <!-- <button onclick="guess()">Guess</button> -->
+            <button type="button" class="btn btn-danger"  onclick="guess()">Guess</button>
+            <!-- <p id="hint2"></p> -->
+            <p id="hint"></p>  
+            <p id="result"></p>            
+
+            
+            </div>
+            <!-- <br>
+            <br> -->
+            <div id="check">
+            Guess a word : <input  class="rounded" type="text" id="guessWord" placeholder="Guess" [>
+            <!-- <button  </button> -->
+            <button type="button" class="btn btn-danger" onclick="check()" >Check</button>
+            </div>
+           <!--  <br>
+            <br> -->
+        </div>
+
+        <div id="again"> 
+            <p id="lose"></p>
+            <button id="try" class="btn btn-danger" onclick="reload()">  Try Again   </button>         
+        </div>
+
+    <!-- </div> -->
+    
+</body>
+</html>
