@@ -1,1 +1,1 @@
-https://muhammadkamil66.github.io/words-guess-game/.
+https://muhammadkamil66.github.io/words-guessing-game/
